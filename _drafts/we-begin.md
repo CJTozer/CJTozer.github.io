@@ -1,25 +1,25 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2016-01-08 15:04:23
-categories: [jekyll]
-tags: [jekyll]
+title:  "We Begin"
+date:   2016-02-16 21:42
+categories: [ramble]
+tags: [intro]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+# About Me
 
-Jekyll also offers powerful support for code snippets:
+* I'm a professional software developer
+	* Mostly I write C though, so...
+* I also enjoy having a pet project or two.  Current time-wasters are:
+	* This
+	* Learning Korean (for a trip in Autumn 2016)
+	* Fixing up some [ESP8266][esp8266] in my flat (probably just doing some real-time data for starters)
 
-``` ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+# Why This?
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+* I wanted to have a play with [Jekyll][Jekyll] and [GitHub pages][gh-pages]
+* There are some things I'd like to keep a record of, for posterity (more on that later)
+* Writing can probably be fun, and will force me to take some of my pet projects a bit more seriously (and maybe even finish one)
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+[jekyll]:      https://jekyllrb.com
+[gh-pages]:    https://pages.github.com/
+[esp8266]:            http://espressif.com/en/products/esp8266/
