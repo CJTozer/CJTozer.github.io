@@ -61,4 +61,4 @@ title: AOC Challenge
 _Source: [Wikipedia][wiki_aoc_cheese]_
 
 
-[wiki_aoc_cheese]: [https://en.wikipedia.org/wiki/List_of_French_cheeses]
+[wiki_aoc_cheese]: https://en.wikipedia.org/wiki/List_of_French_cheeses
