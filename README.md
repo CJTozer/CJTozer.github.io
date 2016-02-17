@@ -1,45 +1,20 @@
-# jekyll-uno
+# CJTozer.github.io
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+To set up:
 
-> :warning:
-  This theme requires ruby and rubygems installed
+* Git clone the repo
+* Install ruby >= V2.0
+* `gem install bundler`
+* Run `bundle install`
 
-### Features
+To test locally:
 
-* Clean layout
-* Resposive layout
-* Pagination
-* Syntax highlighting
-* Social links
-* Tags listing page
-* Categories listing page
-* Google Analytics integration
-* Disqus integration
+* Run `jekyll serve --watch`
 
----
+To deploy:
 
-### Install and Test
+* Run `jekyll build` then commit
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
-3. If you don't have bundler installed: `gem install bundler`
-3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `jekyll serve`
+----
 
-Access via: [http://localhost:4000/jekyll-uno](http://localhost:4000/jekyll-uno)
-
----
-
-### Demo and Download
-
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
-
-![jekyll-uno - free Jekyll theme](/screenshot.png)
-
----
-
-### Copyright and license
-
-It is under [the MIT license](/LICENSE).
+(Credit to [Jekyll Uno](https://github.com/joshgerdes/jekyll-uno) for the starting theme)
