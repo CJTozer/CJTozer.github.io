@@ -3,6 +3,8 @@ layout: page
 title: AOC Challenge
 ---
 
+This page documents my progress through the AOC-designated cheeses of France.  When completed, each cheese should have a link to the blog post detailing the accomplishment.
+
 |--------+--------+-----------|
 | Cheese | Region | Conquered |
 |--------+--------+-----------|
@@ -58,7 +60,7 @@ title: AOC Challenge
 | Total | | 1/48 |
 |-------+------+-|
 
-_Source: [Wikipedia][wiki_aoc_cheese]_
+_Source: [Wikipedia][wiki_aoc_cheese] - 14/02/2016_
 
 
 [wiki_aoc_cheese]: https://en.wikipedia.org/wiki/List_of_French_cheeses
