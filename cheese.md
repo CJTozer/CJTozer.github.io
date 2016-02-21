@@ -37,7 +37,7 @@ This page documents my progress through the AOC-designated cheeses of France.  W
 | Mâconnais | Burgundy | |
 | Maroilles or Marolles | Nord-Pas-de-Calais | |
 | Mont d'or, or Vacherin du Haut-Doubs | Franche-Comté | |
-| **Morbier** | **Franche-Comté** | **[14/02/2016]({% post_url 2016-02-21-morbier.md %})** |
+| **Morbier** | **Franche-Comté** | **[14/02/2016]({% post_url 2016-02-21-morbier %})** |
 | Munster | Alsace and Vosges départements in Lorraine | |
 | Neufchâtel | Normandy | |
 | Ossau-lraty | Aquitaine | |
