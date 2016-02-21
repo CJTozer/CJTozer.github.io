@@ -13,11 +13,11 @@ To test locally:
 
 To deploy:
 
-* Run `jekyll build` then commit
+* Just commit - GitHub does all the work!
 
 ## TODO
 
-- [ ] Template for cheese posts
+- [x] Template for cheese posts
 - [ ] Integrate with comments (Google+ or Disqus)
 - [ ] Get a real domain
 - [ ] Create a list of blog ideas
