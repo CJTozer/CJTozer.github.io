@@ -39,10 +39,10 @@ layout: layout
                     <h2 class="subheading"><%= page.subtitle %></h2>
                     <% } %>
                     <span class="meta">
-                         作者 <%- page.author || config.author %>
+                        <%- page.author || config.author %>
                         <span>
-                          日期 <%= page.date.format(config.date_format) %>
-                         </span>
+                            <%= page.date.format(config.date_format) %>
+                        </span>
                     </span>
                     <div class="tags text-center">
                         <% page.tags.forEach(function(tag){ %>
@@ -258,4 +258,3 @@ layout: layout
     }
 </style>
 <% } %>
-
