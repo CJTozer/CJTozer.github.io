@@ -16,6 +16,7 @@ header-img: /images/header.png
 ## @@@ TODO - sensible default image
 post-default-img: /images/header.png
 post-default-img-mobile: /images/header.png
+favicon: /images/favicon.png
 ## Sidebar
 ### Avatar auto-rescaled so pick a large size for decent resolution
 sidebar-avatar: https://s.gravatar.com/avatar/47e237ae03aa514cb31ec5066cc2556a?s=640
@@ -27,6 +28,7 @@ github_username: CJTozer
 linkedin_username: CJTozer
 disqus_username: CJTozer
 featured-tags: true
+SEOTitle: CJTozer's Blog
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
