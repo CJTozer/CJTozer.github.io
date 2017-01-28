@@ -6,7 +6,7 @@ tags:
 
 # Welcome to my Blog
 
-## Introductions
+## A Little about Me
 
 I've been a software developer for 10 years now.  I've learned a lot, and got plenty of things wrong along the way.
 
@@ -16,7 +16,7 @@ I'm a geek.  I love food, anime, (some) e-sports, (some) real sports, learning l
 
 I'm passionate about training software developers.
 
-## My Goals
+## My Blog Goals
 
 This is my (second) attempt to start a regular blog.  I've not got on well with the idea of blogging before - and looking back I think that's at least in part because I wasn't clear with myself why I'm doing it.
 
@@ -26,7 +26,7 @@ So, this time I'm setting my goals out clearly up-front.
 * Produce content that has potential value to others
 * Engage with the wider software development community, beyond my day job
 
-My goals for this blog are not:
+Some things that aren't goals for this blog:
 
 * Building a legion of loyal followers
 * Making mega-bucks

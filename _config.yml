@@ -14,8 +14,8 @@ timezone: Europe/London
 ## @@@ TODO - landing page image
 header-img: /images/header.png
 ## @@@ TODO - sensible default image
-post-default-img: /images/header.png
-post-default-img-mobile: /images/header.png
+post-default-img: /images/IceLight.png
+post-default-img-mobile: /images/IceLight.png
 favicon: /images/favicon.png
 ## Sidebar
 ### Avatar auto-rescaled so pick a large size for decent resolution
