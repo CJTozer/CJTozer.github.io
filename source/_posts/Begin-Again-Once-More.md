@@ -1,8 +1,10 @@
 ---
-title: Begin Again, Once More
+title: 'Begin Again, Once More'
 subtitle: On starting a blog...
+date: 2017-01-28 23:16:50
 tags:
 ---
+
 
 # Welcome to my Blog
 
