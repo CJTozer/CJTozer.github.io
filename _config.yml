@@ -3,12 +3,30 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: CJTozer.github.io
-subtitle:
+title: Chris Tozer
+subtitle: Software Development, Developing as a Developer, and Developing Developers
 description:
 author: Chris Tozer
-language:
-timezone:
+language: en
+timezone: Europe/London
+
+# Anisina config options
+## @@@ TODO - landing page image
+header-img: /images/header.png
+## @@@ TODO - sensible default image
+post-default-img: /images/header.png
+post-default-img-mobile: /images/header.png
+## Sidebar
+### Avatar auto-rescaled so pick a large size for decent resolution
+sidebar-avatar: https://s.gravatar.com/avatar/47e237ae03aa514cb31ec5066cc2556a?s=640
+sidebar-about-description: Software Developer.  Developer of Developers.
+### @@@ TODO:
+# RSS:
+twitter_username: ChrisJTozer
+github_username: CJTozer
+linkedin_username: CJTozer
+featured-tags: true
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -63,7 +81,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Anisina
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
