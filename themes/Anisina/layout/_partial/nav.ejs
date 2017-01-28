@@ -12,9 +12,8 @@
             </button>
             <a class="navbar-brand animated pulse" href="<%= config.root %>">
                 <span class="brand-logo">
-                    <%= config.title %>
-                </span>
-                's Blog
+                    <%= config.title %>'s Blog
+                </span>                
             </a>
         </div>
 
@@ -43,7 +42,7 @@
 							<% } %>
 						<% } %>
                     <% }); %>
-					
+
 					<% if (about == true) { %>
 						<li>
 							<a href="<%- url_for(config.root + 'about') %>">About</a>

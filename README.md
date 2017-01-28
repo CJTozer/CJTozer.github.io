@@ -3,7 +3,9 @@
 To set up:
 
 * Git clone the repo
+  * Make sure the current branch is the `blog` branch (it should be by default)
 * Run `npm install`
+* Use `hexo` (`npm install -g hexo-cli`) to generate content
 
 To test locally:
 
@@ -11,4 +13,4 @@ To test locally:
 
 To deploy:
 
-* Just commit - GitHub does all the work!
+* Run `hexo deploy`, which will upload the latest site to the `master` branch of this repo.

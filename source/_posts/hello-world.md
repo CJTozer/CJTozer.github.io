@@ -19,6 +19,15 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 $ hexo server
 ```
 
+#### Test
+
+``` python
+class Test:
+  def do_one_thing():
+    """A function"""
+    return 3
+```
+
 More info: [Server](https://hexo.io/docs/server.html)
 
 ### Generate static files
