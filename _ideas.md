@@ -18,7 +18,10 @@
 - [ ] **Atom**
 - [ ] **ST3 & plugins**
 - [ ] **VS Code** - try it out
-- [ ] **Node for CLI**
+- [ ] **Node for CLI app**
+- [ ] **zsh**
+- [ ] **dotfiles**
+- [ ] **tmux**
 
 
 ## Developing as a Developer
