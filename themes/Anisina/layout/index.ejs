@@ -21,7 +21,7 @@ layout: page
         <% } %>
         <div class="post-content-preview">
             <p>
-                <%- truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
+                <%- post.description || truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
             </p>
         </div>
     </a>
@@ -44,7 +44,7 @@ layout: page
         <% } %>
         <div class="post-content-preview">
             <p>
-                <%- truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
+                <%- post.description || truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
             </p>
         </div>
     </a>
@@ -70,4 +70,3 @@ layout: page
     </li>
     <% } %>
 </ul>
-

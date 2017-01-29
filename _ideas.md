@@ -23,6 +23,7 @@
 - [ ] **dotfiles**
 - [ ] **tmux**
 - [ ] **keyboard keys** - F1, CAPS, Insert
+- [ ] **asciinema.org** - also integrate with the site using [this plugin](https://github.com/narongdejsrn/hexo-tag-asciinema)
 
 
 ## Developing as a Developer

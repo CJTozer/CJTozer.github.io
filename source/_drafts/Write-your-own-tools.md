@@ -3,8 +3,8 @@ title: Write your own tools
 subtitle: ...and learn new skills doing it...
 description: A look at how fixing your day-to-day problems can help you get started coding.
 tags:
-  - tip
-  - learn
+  - pro tips
+  - learn to code
 ---
 
 # Key points

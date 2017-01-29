@@ -12,7 +12,7 @@ timezone: Europe/London
 
 # Anisina config options
 ## @@@ TODO - landing page image
-header-img: /images/header.png
+header-img: /images/header.jpg
 ## @@@ TODO - sensible default image
 post-default-img: /images/IceLight.png
 post-default-img-mobile: /images/IceLight.png
@@ -26,8 +26,10 @@ twitter_username: ChrisJTozer
 github_username: CJTozer
 linkedin_username: CJTozer
 disqus_username: CJTozer
-featured-tags: true
 SEOTitle: CJTozer's Blog
+## Featured Tags
+featured-tags: true
+featured-condition-size: 0
 
 # Google Analytics
 ga_track_id: UA-74129024-1
