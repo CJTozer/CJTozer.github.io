@@ -9,7 +9,7 @@ I've been a software developer for 10 years now.  I've learned a lot, and got pl
 
 For my day job I work on high-performance, high-availability telephony systems.  In my spare time I'm a hobbyist with a plethora of half-finished projects.
 
-I'm a geek.  I love food, anime, (some) e-sports, (some) real sports, learning languages (지금 란국을 배워요) and travel.
+I'm a geek.  I love food, anime, (some) e-sports, (some) real sports, learning languages (지금 한국을 배워요) and travel.
 
 I'm passionate about training software developers.
 
