@@ -93,4 +93,4 @@ theme: Anisina
 deploy:
   type: git
   repo:
-    github: https://github.com/CJTozer/CJTozer.github.io,master
+    github: git@github.com:CJTozer/CJTozer.github.io.git,master
