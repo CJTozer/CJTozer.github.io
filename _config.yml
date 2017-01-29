@@ -29,6 +29,9 @@ disqus_username: CJTozer
 featured-tags: true
 SEOTitle: CJTozer's Blog
 
+# Google Analytics
+ga_track_id: UA-74129024-1
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://cjtozer.github.io/
