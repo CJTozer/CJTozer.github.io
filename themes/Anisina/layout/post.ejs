@@ -39,10 +39,7 @@ layout: layout
                     <h2 class="subheading"><%= page.subtitle %></h2>
                     <% } %>
                     <span class="meta">
-                        <%- page.author || config.author %>
-                        <span>
-                            <%= page.date.format(config.date_format) %>
-                        </span>
+                        <i class="fa fa-calendar" aria-hidden="true"></i> <%= page.date.format(config.date_format) %>
                     </span>
                     <div class="tags text-center">
                         <% page.tags.forEach(function(tag){ %>

@@ -1209,3 +1209,8 @@ img::-moz-selection {
     height:0;
     width:0;
 }
+
+img.github-emoji {
+  display: inline;
+  margin: auto;
+}
