@@ -44,9 +44,9 @@ There are 3 main topics I intend to focus on in this blog (though I'll probably 
 
 ### Software Development
 
-In my mind, when I talk about blogging on "Software Development", I mean talking about the low level mechanics of doing your job as a developer.
+When I talk about blogging on "Software Development", I mean talking about the low level mechanics of doing your job as a developer.
 
-I'm not generally going to try to teach how to program in a specific language (there are probably excellent resources out there already), but instead I expect the emphasis to be on:
+I'm not generally going to try to teach how to program in a specific language (there are many excellent resources out there already), but instead I expect the emphasis to be on:
 
 * Tools of the trade (from IDEs to low-level libraries)
 * Tips & tricks
