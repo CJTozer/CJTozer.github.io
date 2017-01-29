@@ -22,6 +22,7 @@
 - [ ] **zsh**
 - [ ] **dotfiles**
 - [ ] **tmux**
+- [ ] **keyboard keys** - F1, CAPS, Insert
 
 
 ## Developing as a Developer

@@ -21,8 +21,7 @@ favicon: /images/favicon.png
 ### Avatar auto-rescaled so pick a large size for decent resolution
 sidebar-avatar: https://s.gravatar.com/avatar/47e237ae03aa514cb31ec5066cc2556a?s=640
 sidebar-about-description: Software Developer.  Developer of Developers.
-### @@@ TODO:
-# RSS:
+RSS: true
 twitter_username: ChrisJTozer
 github_username: CJTozer
 linkedin_username: CJTozer
@@ -59,7 +58,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
 
@@ -83,6 +82,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+feed:
+  type: atom
+  path: feed.xml
+  limit: 20
 theme: Anisina
 
 # Deployment
