@@ -1,6 +1,7 @@
 ---
-title: about
+title: About Me
 date: 2017-01-28 23:25:57
+layout: about
 ---
 
 ## About Me

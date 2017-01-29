@@ -1,0 +1,33 @@
+diffview:
+  title: DiffView for Sublime Text 3
+  date: 2015 - 2016
+  img_link: https://raw.githubusercontent.com/CJTozer/SublimeDiffView/develop/img/screen_2.png
+  tags:
+    - Sublime Text 3
+    - Python
+    - Plugin
+    - Git
+    - Bazaar
+    - SVN
+  subtitle: VCS Diff Plugin for Sublime Text 3
+  description: |
+    I got started with Sublime Text 3, and discovered that there was no good, open source
+    plugin for viewing VCS diffs in the editor.  One year later the solution I made had been
+    downloaded 6,000 times through Sublime's PackageControl.
+  link: https://packagecontrol.io/packages/DiffView
+mapmaker:
+  title: MapMaker
+  date: 2016 - Ongoing
+  img_link: https://raw.githubusercontent.com/CJTozer/mapmaker/master/img/screenshot.png
+  tags:
+    - maps
+    - SVG
+    - ogr2ogr
+    - GeoJSON
+    - NodeJS
+  subtitle: NodeJS Project for Building SVG Maps
+  description: |
+    A tool to simplify the creation of maps by allowing simple specification files
+    to generate rich features - including projection, scale, elements to display and
+    styling.
+  link: https://github.com/CJTozer/mapmaker
