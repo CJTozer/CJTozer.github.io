@@ -33,6 +33,8 @@
 - [ ] _DRAFT_ **Write your own tools**
 - [ ] **I can't code** - look at what blocks people when they're trying to get into coding, and what techniques might help.
 - [ ] **Learn by doing** - a look at some of the ways you can try out new coding languages/environments etc.
+    - [ ] [CodeWars](www.codewars.com)
+    - [ ] [TopCoder?](www.codewars.com)
 
 ### Goals/challenges etc.
 
