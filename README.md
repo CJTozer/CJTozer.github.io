@@ -13,4 +13,4 @@ To test locally:
 
 To deploy:
 
-* Run `hexo deploy -g`, which will generate and upload the latest site to the `master` branch of this repo.
+* Run (`hexo clean` then) `hexo deploy -g`, which will generate and upload the latest site to the `master` branch of this repo.

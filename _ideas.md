@@ -24,7 +24,7 @@
 - [ ] **tmux**
 - [ ] **keyboard keys** - F1, CAPS, Insert
 - [ ] **asciinema.org** - also integrate with the site using [this plugin](https://github.com/narongdejsrn/hexo-tag-asciinema)
-
+- [ ] **Use VCS** - Useful beyond just code; so worth learning even if you don't write software for a living
 
 ## Developing as a Developer
 
