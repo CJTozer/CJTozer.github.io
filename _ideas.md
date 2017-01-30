@@ -1,6 +1,6 @@
 # Topic Ideas
 
-- [ ] **Introduction** - Why am I blogging?  What do I mean by each of the 3 areas?  (Perhaps split into 2?)
+- [x] **Introduction** - Why am I blogging?  What do I mean by each of the 3 areas?  (Perhaps split into 2?)
 
 
 ## Software Development
@@ -9,9 +9,9 @@
 
 - [ ] **JS isn't that bad** - story of how I came to not mind JS :)
 - **My projects**
-  - [ ] **This Blog**
-  - [ ] **MapMaker**
-  - [ ] **DiffView**
+    - [ ] **This Blog**
+    - [ ] **MapMaker**
+    - [ ] **DiffView**
 
 ### Tools
 
@@ -37,6 +37,7 @@
 ### Goals/challenges etc.
 
 - [ ] **Setting goals** - why you'd want to do it, what kinds of goals might be good, how you might track those goals (advertise them, beeminder, habitica etc.)
+- [ ] **Do One Thing**
 
 ### Productivity
 
@@ -45,3 +46,7 @@
 
 
 ## Developing Developers
+
+- [ ] **Do One thing** (again - mentioned above already)
+- [ ] **Jon is Evil** - or preferably my alternate RPG-style thinking.  Need ways to actually _use_ it though, not just build the picture.
+
