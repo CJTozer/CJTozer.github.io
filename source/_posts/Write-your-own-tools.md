@@ -5,7 +5,9 @@ description: A look at how fixing your day-to-day problems can help you get star
 tags:
   - pro tips
   - learn to code
+date: 2017-02-03 23:28:16
 ---
+
 
 # Getting Started
 
