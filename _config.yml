@@ -93,6 +93,11 @@ feed:
   limit: 20
 theme: Anisina
 
+# markdown-it
+markdown:
+  plugins:
+    - markdown-it-footnote
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

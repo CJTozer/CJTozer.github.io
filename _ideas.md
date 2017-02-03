@@ -15,6 +15,7 @@
 
 ### Tools
 
+- [ ] **Command Line 101**
 - [ ] **Atom**
 - [ ] **ST3 & plugins**
 - [ ] **VS Code** - try it out
@@ -51,4 +52,3 @@
 
 - [ ] **Do One thing** (again - mentioned above already)
 - [ ] **Jon is Evil** - or preferably my alternate RPG-style thinking.  Need ways to actually _use_ it though, not just build the picture.
-
