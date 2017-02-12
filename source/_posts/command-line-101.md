@@ -1,10 +1,12 @@
 ---
 title: Command Line 101
 subtitle: Getting Comfortable with the CLI
-description:
 tags:
   - command line
+date: 2017-02-12 19:07:45
+description: A quick introduction to the command line - why it's important and what it can do
 ---
+
 
 Learning the command line is an extremely important skill for many occupations - especially for a developer.  Many tools are command-line only, some things are impossible (or nearly impossible) to achieve without using the command line - even when there is a graphical application that allows some of the same operations.
 
