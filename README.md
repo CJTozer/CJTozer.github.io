@@ -14,3 +14,15 @@ To test locally:
 To deploy:
 
 * Run (`hexo clean` then) `hexo deploy -g`, which will generate and upload the latest site to the `master` branch of this repo.
+
+To create a new draft:
+
+* Run `hexo new draft <post-name>`
+
+To publish that draft:
+
+* Run `hexo publish <post-name>`
+
+To go straight to a published post:
+
+* Run `hexo new post <post-name>`
