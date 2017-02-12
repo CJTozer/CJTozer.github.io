@@ -15,7 +15,7 @@
 
 ### Tools
 
-- [ ] **Command Line 101**
+- [x] **Command Line 101**
 - [ ] **Atom**
 - [ ] **ST3 & plugins**
 - [ ] **VS Code** - try it out
