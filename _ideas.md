@@ -1,3 +1,13 @@
+# Domain Ideas
+
+- Something based on DEFCON - e.g. DEFCON4 = increased state of readiness
+    - devcon9.com (1-5 are taken, "development" and "convinving"?  "continuous"?)
+    - zerotdev.com ("zerot" being an anagram of "Tozer")
+    - 0tdev.com (similarly, but harder to get people to type - could always get it later?)
+        - "0T", "zero T" or "zeroT" might not be a stupid handle...
+
+See [here](https://domains.google.com) for purchasing...
+
 # Topic Ideas
 
 - [x] **Introduction** - Why am I blogging?  What do I mean by each of the 3 areas?  (Perhaps split into 2?)
