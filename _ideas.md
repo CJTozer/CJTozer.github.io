@@ -46,6 +46,7 @@ See [here](https://domains.google.com) for purchasing...
 - [ ] **Learn by doing** - a look at some of the ways you can try out new coding languages/environments etc.
     - [ ] [CodeWars](www.codewars.com)
     - [ ] [TopCoder?](www.codewars.com)
+- [ ] **Code Comprehension**
 
 ### Goals/challenges etc.
 
