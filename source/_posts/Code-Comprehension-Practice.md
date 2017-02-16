@@ -3,25 +3,24 @@ title: Code Comprehension
 tags:
   - pro tips
 date: 2017-02-16 23:13:49
-subtitle:
-description:
+subtitle: ...and improving it through practice...
+description: My method for improving code comprehension
 ---
 
-
-Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely fundamental skill for any serious software developer.  It's always getting exercise:
+Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely fundamental skill for any serious software developer.  It's always getting exercise - for example:
 
 * Learning a new area of code (a new component or brand-new project)
 * It's essential for being able to do good code review
-* Without it, efficient debugging is impossible
+* Without it, _efficient_ debugging is impossible
 * Even writing designs, you'll often have to resort to reading code to working out the details the API docs don't tell you
 
 So, given that, what should you do if you find this is a hard skill to master?  What if you've not been able to just pick up the ability by osmosis?
 
 # Deliberate Practice
 
-I propose one possible route to improvement: [Deliberate Practice](https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice).  Deliberate practice is more commonly associated with skills like playing a musical instrument, but I've found success when using it to train people in very specific areas of software development.
+I propose one possible route to improvement: [Deliberate Practice](https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice).  Deliberate practice is more commonly associated with skills like playing a musical instrument, but I've found success when using it to train people in very specific areas of software development, including this one.
 
-By practicing on a very frequent basis, discussing progress, and getting input from a mentor, it's possible to take real strides.  The method I have used is:
+By practicing on a very frequent basis, discussing progress, and getting input from a mentor, it's possible to take real strides forwards.  The method I have used is:
 
 * Find 15 minutes _every_ day to practice.  Ideally practice is done with a mentor/expert to provide input and advice.
 * Randomly choose a recently-changed file from the codebase (this way it's more likely that the code will have potential relevance).
@@ -42,4 +41,4 @@ To give you some idea what I think you want to be aiming for here, when you're r
 
 # Punch Line
 
-I believe practice can help.  What do you think?  What other skills do you think this kind of technique might help with?
+I believe practice can help.  What do you think?  What other skills do you think this kind of technique could help with?
