@@ -1,10 +1,12 @@
 ---
 title: Code Comprehension
-subtitle:
-description:
 tags:
   - pro tips
+date: 2017-02-16 23:13:49
+subtitle:
+description:
 ---
+
 
 Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely fundamental skill for any serious software developer.  It's always getting exercise:
 
