@@ -2,15 +2,16 @@
 title: Code Comprehension
 tags:
   - pro tips
+  - deliberate practice
 date: 2017-02-16 23:13:49
 subtitle: ...and improving it through practice...
 description: My method for improving code comprehension
 ---
 
-Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely fundamental skill for any serious software developer.  It's always getting exercise - for example:
+Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely essential - it's always getting exercise, for example:
 
 * Learning a new area of code (a new component or brand-new project)
-* It's essential for being able to do good code review
+* It's crucial for being able to do good code review
 * Without it, _efficient_ debugging is impossible
 * Even writing designs, you'll often have to resort to reading code to working out the details the API docs don't tell you
 
