@@ -8,7 +8,7 @@
 
 - [ ] **JS isn't that bad** - story of how I came to not mind JS :)
 - **My projects**
-    - [ ] **This Blog**
+    - [ ] **This Blog** _DRAFT_
     - [ ] **MapMaker**
     - [ ] **DiffView**
 
