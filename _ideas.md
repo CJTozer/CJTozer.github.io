@@ -14,7 +14,7 @@
 
 ### Tools
 
-- [x] **Command Line 101** [2017/02/12](https://zerotdev.com/2017/02/12/command-line-101/)
+- [x] **Command Line 101** [2017/02/12](https://zerotdev.com/2017/02/12/Command-Line-101/)
 - [ ] **Atom**
 - [ ] **ST3 & plugins**
 - [ ] **VS Code** - try it out
