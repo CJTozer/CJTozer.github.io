@@ -1,7 +1,6 @@
 # Topic Ideas
 
-- [x] **Introduction** - Why am I blogging?  What do I mean by each of the 3 areas?  (Perhaps split into 2?)
-
+- [x] **Introduction** - Why am I blogging?  What do I mean by each of the 3 areas?  (Perhaps split into 2?) [2017/01/28](https://zerotdev.com/2017/01/28/Begin-Again-Once-More/)
 
 ## Software Development
 
@@ -15,7 +14,7 @@
 
 ### Tools
 
-- [x] **Command Line 101**
+- [x] **Command Line 101** [2017/02/12](https://zerotdev.com/2017/02/12/command-line-101/)
 - [ ] **Atom**
 - [ ] **ST3 & plugins**
 - [ ] **VS Code** - try it out
