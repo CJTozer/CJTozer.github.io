@@ -98,6 +98,11 @@ theme: Anisina
 markdown:
   plugins:
     - markdown-it-footnote
+  anchors:
+    # Minimum level for ID creation. (Ex. h2 to h6)
+    level: 1
+    # A suffix that is prepended to the number given if the ID is repeated.
+    collisionSuffix: ''
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
