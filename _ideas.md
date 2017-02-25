@@ -30,12 +30,12 @@
 
 ### Skills
 
-- [x] **Write your own tools** [03/02/2017](https://cjtozer.github.io/2017/02/03/Write-your-own-tools/)
+- [x] **Write your own tools** [2017/02/03](https://zerotdev.com/2017/02/03/Write-your-own-tools/)
 - [ ] **I can't code** - look at what blocks people when they're trying to get into coding, and what techniques might help.
 - [ ] **Learn by doing** - a look at some of the ways you can try out new coding languages/environments etc.
     - [ ] [CodeWars](www.codewars.com)
     - [ ] [TopCoder?](www.codewars.com)
-- [ ] **Code Comprehension**
+- [x] **Code Comprehension** [2017/02/16](https://zerotdev.com/2017/02/16/Code-Comprehension-Practice/)
 
 ### Goals/challenges etc.
 
