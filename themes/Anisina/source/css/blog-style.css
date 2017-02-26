@@ -843,6 +843,26 @@ img::-moz-selection {
     }
 }
 
+/* Make tag grouping more obvious, and straighten out link positions */
+.one-tag-list {
+  border-left-style: solid;
+  border-left-width: 10px;
+  border-left-color: #DBB;
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #EEE;
+}
+
+.one-tag-list hr {
+  border-top-color: #CCC;
+}
+
+.one-tag-list > span {
+  margin-top: -90px;
+  padding-top: 90px;
+}
+
 .one-tag-list .tag-text {
     font-weight: 500;
     /* Hux learn from
