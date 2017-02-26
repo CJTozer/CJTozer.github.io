@@ -4,8 +4,9 @@ subtitle: The Tools Behind the Useless Content
 description: A quick look at the tools I use to put this site together
 date: 2017-02-26 11:57:58
 tags:
+- hexo
+- markdown
 ---
-
 
 This post aims to shed some light on how a blog is put together.  If you're already an experienced software developer, this will probably be very easy for you to find out for yourself (in fact you'll find many hundreds of alternatives too), but for everyone, here's a quick run-down of the technologies involved.
 
