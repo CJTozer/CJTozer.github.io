@@ -16,6 +16,18 @@ hr.footnotes-sep {
     margin-bottom: 20px;
 }
 
+/* Superscript used for footnotes - return link needs some padding to prevent getting hidden behind the title bar. */
+sup.footnote-ref > a {
+  margin-top: -90px;
+  padding-top: 90px;
+}
+
+/* Same for the footnotes themselves */
+li.footnote-item {
+  margin-top: -90px;
+  padding-top: 90px;
+}
+
 .sidebar-container {
     color: #bfbfbf;
     font-size: 14px;
