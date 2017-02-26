@@ -25,7 +25,7 @@ Note that the above tutorial is focussed on Linux (or MacOS, which is relatively
 
 On Windows I would recommend setting up [Bash on Ubuntu on Windows](https://msdn.microsoft.com/en-gb/commandline/wsl/about) (a feature in Windows 10 which gives you a Linux command-line on top of Windows) - then when you've learned the basics of using Linux, you'll find it much easier to search on the web for answers of how to do the same things on Windows.
 
-# Punch Line
+# Final Thoughts
 
 * The command line is a really useful tool - and especially if you're serious about writing code you should take the time to get comfortable with it
 * Let us know in the comments what your favourite command-line tool is, or let us know what the main challenge you've had to solve using the command-line is

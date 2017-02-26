@@ -40,6 +40,6 @@ To give you some idea what I think you want to be aiming for here, when you're r
 * Be explicit about any assumptions you're making about the code (and you will likely want to follow up on these later!)
 * Avoid getting stuck in a quagmire of detail - instead filtering so that you only dig into areas that are likely to be relevant to you
 
-# Punch Line
+# Final Thoughts
 
 I believe practice can help.  What do you think?  What other skills do you think this kind of technique could help with?

@@ -43,7 +43,7 @@ Some examples of things you should consider before you start (and writing down t
 
 * What are the ways the tool is going to be used?  Pick the most important one, and you'll focus solely on that for the moment.
 * What are the inputs/information that your program will need?
-* Where is the tool going to run?  Do you need it to be a website?  Or is a simple command-line a better option?^[This makes me think I ought to write a quick intro to the command line.  I'll do that and link it when complete!]
+* Where is the tool going to run?  Do you need it to be a website?  Or is a simple command-line a better option?^[See my [Command-line 101 post](https://zerotdev.com/2017/02/12/Command-Line-101/) for a brief intro to the command line.]
 
 # What Language to Choose?
 
@@ -58,7 +58,7 @@ That said, given this is your first project, there's some advice I'd give here -
     * In general, Python is a great choice - it's simple and versatile.  If there's no good reason to use the next two, Python is a great place to start.
     * If you know you want to be writing websites, then JavaScript is an essential tool, so you could get started with that.  There's a little more infrastructure to get started with JavaScript running from the command line (you'll need Node - [here's](https://developer.atlassian.com/blog/2015/11/scripting-with-node/) a good tutorial on the subject)
 
-# Punch Line
+# Final Thoughts
 
 * Pick a problem to solve or tool to build (ideally one you'd actually use)
 * Build a clear view of what your tool will be - and keep it simple to begin with!
