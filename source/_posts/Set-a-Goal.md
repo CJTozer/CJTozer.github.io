@@ -4,7 +4,9 @@ subtitle: Aim for a target... Then hit it!
 description: A challenge to set yourself a goal
 tags:
   - challenge
+date: 2017-03-06 23:48:56
 ---
+
 
 I'm going to begin this post with a little bit about my story.  I - like a lot of people I know - spent quite a number of my formative years not setting myself any clear goals.  This involved a combination of drifting through, and having goals imposed on you from the outside.
 
