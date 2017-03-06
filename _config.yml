@@ -103,6 +103,8 @@ markdown:
     level: 1
     # A suffix that is prepended to the number given if the ID is repeated.
     collisionSuffix: ''
+  render:
+    html: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
