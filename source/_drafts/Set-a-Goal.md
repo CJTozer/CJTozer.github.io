@@ -21,13 +21,13 @@ If you're a manager or a mentor, then you should absolutely be doing all you can
 # Some Thoughts on Goals
 
 * Be as specific as possible - and make sure you have a clear way to measure progress
+* Write your goals down, in black and white - and share them with people who can help you succeed (or just people who care about you and your success). For most goals, just telling someone else you have these goals is potentially a strong motivator
 * Goals are much more likely to be successful if they're set by the person trying to achieve them, not forced upon them
-* For most goals, just telling someone else you have these goals is a strong motivator
-* It's about the process.  Achieving your goal is not the be-all and end-all - be careful to remember the progress you make along the way and give yourself credit for that
+* It's about the process.  Achieving your goal is not the be-all and end-all - be careful to remember the progress you make along the way and give yourself credit for that too
 
 # Tracking goals
 
-Once you've decided on your goals and told people that you're aiming for them, there are a couple of interesting ways to track them:
+Once you've decided on your goals and told people that you're aiming for them, there are a couple of interesting ways I've found to track them:
 
 ## Beeminder
 
