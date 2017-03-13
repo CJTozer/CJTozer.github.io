@@ -8,9 +8,10 @@
 
 - [ ] **JS isn't that bad** - story of how I came to not mind JS :)
 - **My projects**
-    - [ ] **This Blog** _DRAFT_
+    - [x] **This Blog** [2017/02/26](https://zerotdev.com/2017/02/26/The-Technology-of-this-Blog/)
     - [ ] **MapMaker**
     - [ ] **DiffView**
+- [ ] **CI Design** - per our LB CI
 
 ### Tools
 
@@ -39,7 +40,7 @@
 
 ### Goals/challenges etc.
 
-- [ ] **Setting goals** - why you'd want to do it, what kinds of goals might be good, how you might track those goals (advertise them, beeminder, habitica etc.)
+- [x] **Setting goals** - why you'd want to do it, what kinds of goals might be good, how you might track those goals (advertise them, beeminder, habitica etc.) [2017/03/06](https://zerotdev.com/2017/03/06/Set-a-Goal/)
 - [ ] **Do One Thing**
 
 ### Productivity
