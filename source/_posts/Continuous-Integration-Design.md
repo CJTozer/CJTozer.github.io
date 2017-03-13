@@ -1,10 +1,12 @@
 ---
 title: Continuous Integration Design
 subtitle: How not to do it Wrong
-description:
 tags:
   - continuous integration
+date: 2017-03-13 22:18:51
+description:
 ---
+
 
 For my day job, we're currently building a high-performance system, pretty much from scratch.  One of the challenges facing us lately has been considering how to test this new system - and during the initial thinking we struck on something I thought I'd share.
 
