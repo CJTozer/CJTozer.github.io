@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="undefined">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="alternate" type="application/atom+xml" title="zeroT dev - CJTozer&#39;s Blog" href="/feed.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
+    <title>
+        
+        Continuous Integration Design｜CJTozer&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://zerotdev.com/2017/03/13/Continuous-Integration-Design/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('/images/header.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    zeroT dev - CJTozer&#39;s Blog
+                </span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/about/">About Me</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/my-projects/">My Projects</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">Tagged Posts</a>
+                        </li>
+							
+						
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="/images/IceLight.png">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('/images/IceLight.png')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>Continuous Integration Design</h1>
+                    
+                    <h2 class="subheading">How not to do it Wrong</h2>
+                    
+                    <span class="meta">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> 2017-03-13
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#continuous integration"
+                           title="continuous integration">continuous integration</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            Continuous Integration Design
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>For my day job, we're currently building a high-performance system, pretty much from scratch.  One of the challenges facing us lately has been considering how to test this new system - and during the initial thinking we struck on something I thought I'd share.</p>
+<p><em>Some context here - the various products I've worked on over the years have <s>almost</s> exclusively been harder to test than they are to write.  Sometimes this is the nature of the beast, but often it comes down to bad design.  This blog post isn't trying to tell you the right way to do CI design - but it is a few things to think about that are often overlooked, and in my experience can contribute to the 'badness' of many test frameworks.</em></p>
+<h1 id="use-cases">Use Cases</h1>
+<p>This is a common thing to do in many walks of software development, but one I've never seen applied to test or CI frameworks - and now it's been planted in my brain I can't stop thinking how important this is to ensuring success.</p>
+<p>It's easy to assume that your CI pipeline is something like:</p>
+<blockquote>
+<p>Developer checks in a fix, build passes or fails</p>
+</blockquote>
+<p>...but is that really all there is to the story?  When I started thinking about it, there were very many more potential users/use cases for our CI system.  To get you thinking, here's some ideas broken down into users...</p>
+<h2 id="developer">Developer</h2>
+<ul>
+<li>makes functional bug fix, adds new test for it</li>
+<li>makes performance improvement, measures improvement</li>
+<li>adds feature, adds performance test for it and checks other performance tests for regressions</li>
+</ul>
+<h2 id="maintainer">Maintainer</h2>
+<ul>
+<li>checks performance improvement/degradation over time - can pinpoint bad commits</li>
+<li>checks quality of product before releasing</li>
+</ul>
+<h2 id="tester">Tester</h2>
+<ul>
+<li>has confidence in product being delivered for testing</li>
+<li>knows what's already been tested, so doesn't need to cover the same ground</li>
+<li>adds test for new functional/performance area that devs didn't think of</li>
+</ul>
+<h2 id="product-manager-sales">Product Manager (/Sales?)</h2>
+<ul>
+<li>presents detailed performance data to customer prospect</li>
+<li>spins up a demo of the system performing superbly under high load</li>
+</ul>
+<hr>
+<p>So, that's just the things off the top of my head.  From thinking like this, it was immediately clear to me how the previous frameworks I'd worked with just didn't fit the bill.  I'm really hoping we're able to make all of these use cases a success!</p>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>I've found thinking about use cases really helpful.  Have you tried it?  What interesting use cases have I missed?</p>
+
+                <hr>
+                
+
+                <!-- Weirdly page.next and page.prev seem the wrong way round... -->
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/03/06/Set-a-Goal/" data-toggle="tooltip" data-placement="top"
+                           title="Set a Goal">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/08/22/Software-Architecture-Recommendations/" data-toggle="tooltip" data-placement="top"
+                           title="Software Architecture Recommendations">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#use-cases"><span class="toc-text">Use Cases</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#developer"><span class="toc-text">Developer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#maintainer"><span class="toc-text">Maintainer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tester"><span class="toc-text">Tester</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#product-manager-sales"><span class="toc-text">Product Manager (/Sales?)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#final-thoughts"><span class="toc-text">Final Thoughts</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#continuous integration"
+                           title="continuous integration">continuous integration</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "CJTozer";
+    var disqus_identifier = "https://zerotdev.com/2017/03/13/Continuous-Integration-Design/";
+    var disqus_url = "https://zerotdev.com/2017/03/13/Continuous-Integration-Design/";
+
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ChrisJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/CJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Chris Tozer 2017
+                    <br>
+                    Theme adapted from <a href="https://github.com/haojen/hexo-theme-Anisina">Anisina</a> by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://zerotdev.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74129024-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://s.gravatar.com/avatar/47e237ae03aa514cb31ec5066cc2556a?s=640">
+</body>
+
+</html>

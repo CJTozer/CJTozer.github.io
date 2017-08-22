@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="null">
+    <meta name="keyword" content="undefined">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="alternate" type="application/atom+xml" title="zeroT dev - CJTozer&#39;s Blog" href="/feed.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
+    <title>
+        
+        Code Comprehension｜CJTozer&#39;s Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://zerotdev.com/2017/02/16/Code-Comprehension-Practice/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('/images/header.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    zeroT dev - CJTozer&#39;s Blog
+                </span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+                        
+							
+                        <li>
+                            <a href="/about/">About Me</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/my-projects/">My Projects</a>
+                        </li>
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/tags/">Tagged Posts</a>
+                        </li>
+							
+						
+                    
+
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="/images/IceLight.png">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('/images/IceLight.png')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>Code Comprehension</h1>
+                    
+                    <h2 class="subheading">...and improving it through practice...</h2>
+                    
+                    <span class="meta">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> 2017-02-16
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#pro tips"
+                           title="pro tips">pro tips</a>
+                        
+                        <a class="tag" href="/tags/#deliberate practice"
+                           title="deliberate practice">deliberate practice</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            Code Comprehension
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>Reading code is such a fundamental part of being a developer, but often we take it completely for granted.  The ability to take unfamiliar source code, and turn it into a mental picture of what's going on is an absolutely essential - it's always getting exercise, for example:</p>
+<ul>
+<li>Learning a new area of code (a new component or brand-new project)</li>
+<li>It's crucial for being able to do good code review</li>
+<li>Without it, <em>efficient</em> debugging is impossible</li>
+<li>Even writing designs, you'll often have to resort to reading code to working out the details the API docs don't tell you</li>
+</ul>
+<p>So, given that, what should you do if you find this is a hard skill to master?  What if you've not been able to just pick up the ability by osmosis?</p>
+<h1 id="deliberate-practice">Deliberate Practice</h1>
+<p>I propose one possible route to improvement: <a href="https://en.wikipedia.org/wiki/Practice_(learning_method)#Deliberate_practice" target="_blank" rel="external">Deliberate Practice</a>.  Deliberate practice is more commonly associated with skills like playing a musical instrument, but I've found success when using it to train people in very specific areas of software development, including this one.</p>
+<p>By practicing on a very frequent basis, discussing progress, and getting input from a mentor, it's possible to take real strides forwards.  The method I have used is:</p>
+<ul>
+<li>Find 15 minutes <em>every</em> day to practice.  Ideally practice is done with a mentor/expert to provide input and advice.</li>
+<li>Randomly choose a recently-changed file from the codebase (this way it's more likely that the code will have potential relevance).
+<ul>
+<li>Using Git to give a selection of 3 possibilities: <code>git diff --stat --name-only @{2.weeks.ago} | shuf | head -3</code>.</li>
+</ul>
+</li>
+<li>Pick a sensible amount of code to focus on.
+<ul>
+<li>Depending on the level of the training, and the complexity of the code, this could mean going into all the details for a single function, or skimming a whole file at a higher level (both are valuable skills, so both should be practiced).</li>
+</ul>
+</li>
+<li>Talk through the code as you think through it.
+<ul>
+<li>Don't sit there to try and work it out first - make it a conversation.</li>
+</ul>
+</li>
+<li>Make sure you're thinking about the pointers below - and are getting education if the high-level picture isn't there.</li>
+</ul>
+<h2 id="pointers">Pointers</h2>
+<p>To give you some idea what I think you want to be aiming for here, when you're really good at code comprehension, you should - when looking at a new area of code - be able to:</p>
+<ul>
+<li>Build up a high-level picture of the context for the code</li>
+<li>Be explicit about any assumptions you're making about the code (and you will likely want to follow up on these later!)</li>
+<li>Avoid getting stuck in a quagmire of detail - instead filtering so that you only dig into areas that are likely to be relevant to you</li>
+</ul>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>I believe practice can help.  What do you think?  What other skills do you think this kind of technique could help with?</p>
+
+                <hr>
+                
+
+                <!-- Weirdly page.next and page.prev seem the wrong way round... -->
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/02/12/Command-Line-101/" data-toggle="tooltip" data-placement="top"
+                           title="Command Line 101">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/02/26/The-Technology-of-this-Blog/" data-toggle="tooltip" data-placement="top"
+                           title="The Technology of this Blog">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#deliberate-practice"><span class="toc-text">Deliberate Practice</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#pointers"><span class="toc-text">Pointers</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#final-thoughts"><span class="toc-text">Final Thoughts</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#pro tips"
+                           title="pro tips">pro tips</a>
+                        
+                        <a class="tag" href="/tags/#deliberate practice"
+                           title="deliberate practice">deliberate practice</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "CJTozer";
+    var disqus_identifier = "https://zerotdev.com/2017/02/16/Code-Comprehension-Practice/";
+    var disqus_url = "https://zerotdev.com/2017/02/16/Code-Comprehension-Practice/";
+
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a target="_blank" href="https://twitter.com/ChrisJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/CJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/CJTozer">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Chris Tozer 2017
+                    <br>
+                    Theme adapted from <a href="https://github.com/haojen/hexo-theme-Anisina">Anisina</a> by <a href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://zerotdev.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74129024-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- Baidu Tongji -->
+
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="https://s.gravatar.com/avatar/47e237ae03aa514cb31ec5066cc2556a?s=640">
+</body>
+
+</html>
